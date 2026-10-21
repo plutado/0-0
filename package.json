@@ -1,0 +1,69 @@
+{
+  "name": "0-0",
+  "version": "0.1.0",
+  "description": "An open-source player for timed, interactive media around a video: transcripts, images, source cards and chapters that appear as the video plays.",
+  "license": "MIT",
+  "author": "David Fugate",
+  "homepage": "https://0-0.in",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plutado/0-0.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plutado/0-0/issues"
+  },
+  "keywords": [
+    "video",
+    "interactive",
+    "transcript",
+    "webvtt",
+    "web-component",
+    "hypervideo"
+  ],
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/zero-zero.js",
+  "module": "./dist/zero-zero.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/zero-zero.js"
+    },
+    "./element": {
+      "types": "./dist/types/element.d.ts",
+      "import": "./dist/element.js"
+    }
+  },
+  "sideEffects": [
+    "./dist/element.js",
+    "./src/element.ts"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:lib && npm run build:demo",
+    "build:lib": "vite build --config vite.lib.config.ts && tsc -p tsconfig.build.json",
+    "build:demo": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . && tsc --noEmit",
+    "media": "sh scripts/generate-demo-media.sh",
+    "screenshots": "sh scripts/screenshots.sh"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "jsdom": "^29.1.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}

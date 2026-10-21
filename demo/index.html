@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>0-0 demo</title>
+    <meta name="description" content="Demo of 0-0, an open-source player for timed, interactive media around a video." />
+    <link rel="stylesheet" href="./demo.css" />
+  </head>
+  <body>
+    <header class="site">
+      <h1><span class="glasses" aria-hidden="true">0-0</span> demo</h1>
+      <p>A player for timed, interactive media around a video. Press play, or pick a line in the transcript.</p>
+    </header>
+    <main>
+      <zero-zero-player
+        id="player"
+        src="media/demo.mp4"
+        cues="media/cues.json"
+        transcript="media/captions.vtt"
+      ></zero-zero-player>
+      <p class="controls">
+        <label>Theme
+          <select id="theme">
+            <option value="auto">Match system</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </label>
+        <a id="export" href="#" download="transcript.vtt">Download transcript (WebVTT)</a>
+      </p>
+      <p class="note">The video, narration and images on this page are synthetic, generated for the demo. Real deployments should use media they own.</p>
+    </main>
+    <footer class="site">
+      <a href="https://github.com/plutado/0-0">Source on GitHub</a> &middot; MIT licensed
+    </footer>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

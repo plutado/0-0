@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "metadata": {
+    "title": "A short tour of colour and shape",
+    "description": "Synthetic demo for the 0-0 player. All media and text are invented.",
+    "language": "en",
+    "duration": 48
+  },
+  "regions": [
+    { "id": "chapters", "placement": "sidebar", "label": "Chapters" },
+    { "id": "transcript", "placement": "sidebar", "label": "Transcript" },
+    { "id": "notes", "placement": "below", "label": "Sources and notes", "announce": true },
+    { "id": "corner", "placement": "overlay", "position": "top-right", "label": "On screen" }
+  ],
+  "cues": [
+    { "id": "ch-intro", "start": 0, "end": 8, "type": "chapter", "region": "chapters", "data": { "title": "Introduction" } },
+    { "id": "ch-red", "start": 8, "end": 16, "type": "chapter", "region": "chapters", "data": { "title": "Red" } },
+    { "id": "ch-blue", "start": 16, "end": 24, "type": "chapter", "region": "chapters", "data": { "title": "Blue" } },
+    { "id": "ch-green", "start": 24, "end": 32, "type": "chapter", "region": "chapters", "data": { "title": "Green" } },
+    { "id": "ch-mix", "start": 32, "end": 40, "type": "chapter", "region": "chapters", "data": { "title": "Mixing" } },
+    { "id": "ch-outro", "start": 40, "end": 48, "type": "chapter", "region": "chapters", "data": { "title": "Outro" } },
+
+    { "id": "link-about", "start": 1, "end": 8, "type": "link", "region": "notes", "data": { "title": "About this demo", "url": "https://example.org/zero-zero/demo", "source": "Example Notes", "summary": "How the video, transcript and images on this page were generated." } },
+    { "id": "img-red", "start": 9, "end": 16, "type": "image", "region": "notes", "data": { "src": "swatch-red.svg", "alt": "A red rectangle with a white square in the middle.", "caption": "The red scene as a swatch.", "credit": "Generated SVG" } },
+    { "id": "link-warm", "start": 10, "end": 16, "type": "link", "region": "notes", "data": { "title": "Warm and cool colours, a primer", "url": "https://example.com/articles/warm-and-cool", "source": "Example Colour Journal", "summary": "An invented article on why reds feel closer than blues." } },
+    { "id": "img-blue", "start": 17, "end": 24, "type": "image", "region": "notes", "data": { "src": "swatch-blue.svg", "alt": "A blue rectangle with four pale vertical stripes.", "caption": "Stripes at even spacing." } },
+    { "id": "img-grid", "start": 25, "end": 32, "type": "image", "region": "notes", "data": { "src": "grid-diagram.svg", "alt": "Diagram of eight pale tiles on green with equal gaps.", "caption": "Tile and gutter proportions." } },
+    { "id": "link-grid", "start": 27, "end": 32, "type": "link", "region": "notes", "data": { "title": "Designing with grids", "url": "https://example.net/grids", "source": "Example Design Notes" } },
+    { "id": "wheel", "start": 32, "end": 40, "type": "image", "region": "corner", "data": { "src": "colour-wheel.svg", "alt": "Three overlapping translucent circles in red, blue and green.", "width": 120, "height": 120 } },
+    { "id": "link-mixing", "start": 33, "end": 40, "type": "link", "region": "notes", "data": { "title": "Additive and subtractive mixing", "url": "https://example.com/articles/mixing", "source": "Example Colour Journal", "summary": "Light adds up toward white; paint subtracts toward dark." } },
+    { "id": "link-repo", "start": 41, "end": 48, "type": "link", "region": "notes", "data": { "title": "0-0 on GitHub", "url": "https://github.com/plutado/0-0", "source": "github.com", "summary": "Source code, cue format documentation and roadmap." } }
+  ]
+}
