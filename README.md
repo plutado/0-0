@@ -118,7 +118,7 @@ Estimates are rough working hours. The full plan is in [ROADMAP.md](ROADMAP.md).
 
 1. **Visual cue editor with a timeline** (about 60 h): drag cues on a timeline over the video, edit their data in a form, and save a cue document.
 2. **Media adapters for HLS, YouTube and Vimeo** (about 24 h): the engine already depends only on a small media interface.
-3. **More element types** (about 24 h): quotes, footnotes, maps, code snippets and polls.
+3. **More element types** (about 30 h): social post cards, quotes, footnotes, maps, code snippets and polls.
 4. **Cue authoring from transcripts** (about 16 h): turn marked-up transcript lines into link, image and chapter cues.
 5. **Multiple transcript languages** (about 14 h): a language switcher and per-language WebVTT files, plus translatable UI strings.
 6. **Accessibility audit** (about 16 h): screen reader passes, keyboard shortcuts, and fixes from the findings.

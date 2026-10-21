@@ -1,6 +1,6 @@
 # Roadmap
 
-Estimates are working hours and will be revised as the work is understood. Remaining work totals about **266 hours**.
+Estimates are working hours and will be revised as the work is understood. Remaining work totals about **272 hours**.
 
 ## Milestone 0: Foundation (done)
 
@@ -12,13 +12,14 @@ Estimates are working hours and will be revised as the work is understood. Remai
 - [x] Web Component and programmatic API (4 h)
 - [x] Synthetic demo, CI and Pages deployment (4 h)
 
-## Milestone 1: More element types (24 h)
+## Milestone 1: More element types (30 h)
 
 - [ ] Quote element with attribution (3 h)
 - [ ] Footnote element with numbered markers linked from the transcript (5 h)
 - [ ] Map element using a static image plus an optional embed, with text alternative (6 h)
 - [ ] Code snippet element with copy button and no-dependency highlighting (4 h)
 - [ ] Poll element with a pluggable results backend (6 h)
+- [ ] Social post card: author, handle, avatar, text, media thumbnail and link, rendered from cue data without third-party embed scripts (6 h)
 
 ## Milestone 2: Media adapters (24 h)
 
