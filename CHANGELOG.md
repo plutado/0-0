@@ -4,6 +4,8 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-21
+
 ### Added
 
 - Cue document format, version 1, with a validator that reports every issue with its path.
@@ -14,3 +16,6 @@ All notable changes to this project are documented here. The format follows [Kee
 - Sidebar, below and overlay regions with responsive stacking, light and dark themes, and reduced-motion support.
 - `<zero-zero-player>` Web Component and `createPlayer()` programmatic API.
 - Demo site with synthetic media, CI and GitHub Pages workflows.
+
+[Unreleased]: https://github.com/plutado/0-0/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/plutado/0-0/releases/tag/v0.1.0
